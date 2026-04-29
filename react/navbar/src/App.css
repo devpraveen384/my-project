@@ -1,0 +1,26 @@
+*{
+   margin:0;
+    padding:0;    
+    box-sizing: border-box;
+
+  }
+
+  .links{
+    display: flex;
+    justify-content: space space-between;
+    align-items: center;
+    background-color:olive;
+    color:white;
+    height: 50px;
+    
+  }
+
+  .praveen{
+    display: flex;
+    justify-content: center;
+
+
+
+
+  }
+
