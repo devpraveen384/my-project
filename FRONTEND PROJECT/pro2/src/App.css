@@ -1,0 +1,267 @@
+.app {
+  min-height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.topbar h1 {
+  margin: 0.2rem 0 0;
+  font-size: 1.6rem;
+}
+
+.brand-kicker {
+  margin: 0;
+  color: #1d4ed8;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.topbar-nav {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.topbar-nav a {
+  text-decoration: none;
+  color: #334155;
+  padding: 0.45rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.92rem;
+}
+
+.topbar-nav a:hover,
+.topbar-nav .active-link {
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
+.page-shell {
+  padding: 1.5rem 2rem 2rem;
+}
+
+.page-title h2 {
+  margin-bottom: 0.4rem;
+}
+
+.page-title p {
+  margin-bottom: 1.25rem;
+  color: #64748b;
+}
+
+.hero-panel {
+  background: linear-gradient(120deg, #dbeafe, #f8fafc);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-panel h2 {
+  margin-top: 0.5rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: #1d4ed8;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.hero-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.three-cols {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.info-card,
+.card,
+.order-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #64748b;
+  font-size: 0.82rem;
+}
+
+.card-station {
+  color: #334155;
+  font-size: 0.9rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+.card-footer button {
+  border: none;
+  background: #0f766e;
+  color: #fff;
+  padding: 0.45rem 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cart-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.cart-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1.8fr auto auto auto;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.cart-controls button {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  cursor: pointer;
+}
+
+.line-total {
+  font-weight: 600;
+}
+
+.remove-btn {
+  border: none;
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 8px;
+  padding: 0.45rem 0.7rem;
+}
+
+.cart-summary {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-form {
+  display: grid;
+  gap: 0.8rem;
+  max-width: 560px;
+}
+
+.checkout-form input {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.7rem;
+  font-size: 0.95rem;
+}
+
+.checkout-actions {
+  margin-top: 0.5rem;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 0.9rem;
+}
+
+.action-buttons {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.order-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.order-header,
+.order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.status {
+  background: #fef3c7;
+  color: #92400e;
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.8rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+@media (max-width: 700px) {
+  .topbar,
+  .page-shell {
+    padding: 1rem;
+  }
+
+  .cart-item {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-summary {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}

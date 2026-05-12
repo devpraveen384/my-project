@@ -1,0 +1,62 @@
+<script>
+const arr = [1,2,2,3,4,4,5,4,5,6]
+
+let result = []
+
+
+for(let i=0;i<arr.length;i++){
+
+//console.log('for loop i',arr[i]); 
+
+// Result - 1,2,2,3,4,4,5,4,5,6
+let found = false
+
+   for(let j=0;j<result.length;j++){
+
+    
+    //console.log('for loop j',j);
+
+    console.log('i value',arr[i]);
+   
+    console.log('j value',result[j]);
+    
+
+    
+
+    if(arr[i] === result[j]){
+
+
+     found = true
+     console.log('Duplicate');
+        
+     console.log('Result',result);
+     
+
+
+    }
+    
+
+
+
+   }
+
+   if(found===false){
+
+
+    
+
+    result[result.length] = arr[i]
+
+    console.log('Result',result);
+    
+        
+   }
+
+
+    //console.log('final',result);
+
+}
+
+
+
+</script>
